@@ -2,8 +2,7 @@
 import shutil
 
 
-
-def cp_file(): # Function . Does not get called unless var y_n returns true with string "y" 
+def cp_file(): # Function . Does not get called unless var y_n returns true with string "y"
 
         print("Please enter file to copy from. Full path")
         frompath = r'' # Assigns first a storage box (variable) soo the input from console can get saved here.
@@ -16,15 +15,16 @@ def cp_file(): # Function . Does not get called unless var y_n returns true with
         shutil.copyfile(frompath, dest)
 
 
-
 print("Do you want to copy files? select (Y/n)")
 
 y_n = input() # Promts the user to input either y or n and store it in the y_n variable
 
 
-if y_n == "y":  # If "y" returns true (bool) then execute function cp_file  
- cp_file()
+if y_n == "y":  # If "y" returns true (bool) then execute function cp_file
+    cp_file()
+else: 
+    print("cancelling...")
 
 
-print("cancelling...") 
+
 
